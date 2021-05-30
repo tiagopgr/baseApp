@@ -6,7 +6,7 @@
         <div class="col-md-6">
             <div class="card-group d-block d-md-flex row">
                 <div class="card p-4">
-                    {!! Form::open(['method' => "post", 'route' => "login"]) !!}
+                    {!! Form::open(['method' => "post"]) !!}
                     <div class="card-body">
                         @include("partials.alerts")
                         <h1>Acesso</h1>
@@ -30,7 +30,7 @@
                                 <button class="btn btn-primary btn-block px-4" type="submit">Entrar</button>
                             </div>
                             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                <a class="btn btn-link btn-block px-0" href="{{ route("resetsenha") }}">Esqueceu sua senha?</a>
+                                <a class="btn btn-link btn-block px-0" href="#">Esqueceu sua senha?</a>
                             </div>
                         </div>
                         @if(Session::has('identificador') && Session::has('route'))
