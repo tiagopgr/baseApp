@@ -9,10 +9,12 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "kris/laravel-form-builder": "^1.40",
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "prettus/l5-repository": "^2.7",
-        "spatie/laravel-permission": "^4.0"
+        "spatie/laravel-permission": "^4.0",
+        "ycs77/laravel-form-builder-bs4": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
