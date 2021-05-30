@@ -35,7 +35,7 @@
                         </div>
                     @endif
 
-                    @if (trim($__env->yieldContent('container2')))
+                    @if(trim($__env->yieldContent('container2')))
                         <div class="row">
                             <div class="col-md-12 col-12 col-lg-12">
                                 <div class="card card-accent-primary">
@@ -54,7 +54,7 @@
                     @if (trim($__env->yieldContent('container3')))
                         <div class="row">
                             <!--- Aqui voce precisa por seu conteudo e grid -->
-
+                            @yield("container3")
                             <!--- \end -->
                         </div>
                     @endif
