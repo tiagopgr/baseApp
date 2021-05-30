@@ -7,4 +7,7 @@ use Illuminate\Http\Request;
 class RoleController extends AbstractBaseController
 {
 
+    //$role->syncPermissions($permissions);
+    //$permission->syncRoles($roles);
+
 }
