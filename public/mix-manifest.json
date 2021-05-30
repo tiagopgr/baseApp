@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/vendors/@coreui/icons/svg/brand.svg": "/vendors/@coreui/icons/svg/brand.svg",
+    "/vendors/@coreui/icons/svg/flag.svg": "/vendors/@coreui/icons/svg/flag.svg",
+    "/vendors/@coreui/icons/svg/free.svg": "/vendors/@coreui/icons/svg/free.svg",
+    "/vendors/sweetalert2/sweetalert2.min.css": "/vendors/sweetalert2/sweetalert2.min.css",
+    "/vendors/sweetalert2/sweetalert2.min.js": "/vendors/sweetalert2/sweetalert2.min.js"
+}
