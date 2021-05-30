@@ -2,6 +2,11 @@
 
 namespace App\Providers;
 
+use App\Repositories\PermissionRepository;
+use App\Repositories\PermissionRepositoryEloquent;
+use App\Repositories\RoleRepository;
+use App\Repositories\RoleRepositoryEloquent;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
 use Prettus\Repository\Providers\RepositoryServiceProvider;
 
@@ -27,5 +32,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        \Schema::defaultStringLength(191);
+        \App::bind(PermissionRepository::class, PermissionRepositoryEloquent::class);
+        \App::bind(RoleRepository::class, RoleRepositoryEloquent::class);
     }
 }

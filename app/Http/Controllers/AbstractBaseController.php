@@ -74,7 +74,7 @@ abstract class AbstractBaseController extends Controller
     }
 
 
-    protected function ResolveViewPath()
+    public function ResolveViewPath()
     {
         if (!App::runningInConsole()) {
             $request = \Request::route();

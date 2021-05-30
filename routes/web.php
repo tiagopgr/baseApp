@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix("/dashboard")->name("dashboard.")->group(function () {
 
-    Route::get("/", [\App\Http\Controllers\RoleController::class, 'index'])->name("index");
+    Route::get("/", [\App\Http\Controllers\DashboardController::class, 'index'])->name("index");
     Route::resource("/permission", \App\Http\Controllers\PermissionController::class);
     Route::resource("/role", \App\Http\Controllers\RoleController::class);
 
