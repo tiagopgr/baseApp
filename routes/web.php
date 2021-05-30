@@ -13,10 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*Route::get("/", function () {
+    return view("welcome");
+});*/
 
-Route::get("/dashboard", function(){
-   return view("auth.login");
+Route::prefix("/dashboard")->name("dashboard.")->group(function () {
+
+    Route::get("/", [\App\Http\Controllers\RoleController::class, 'index'])->name("index");
+    Route::resource("/permission", \App\Http\Controllers\PermissionController::class);
+    Route::resource("/role", \App\Http\Controllers\RoleController::class);
+
 });

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keyword" content="">
-    <title>Sistema{{ isset($title) ? " - " . $title : "" }}</title>
+    <title>Sistema{{ (isset($title) && !empty(trim($title))) ? " - " . $title : "" }}</title>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">

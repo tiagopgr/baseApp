@@ -1,14 +1,13 @@
 @extends("main")
 
 @section("container")
-    @hasanyrole('adm|operador')
+
     <div class="row">
-        @include("partials.widget", ['icon' => 'education', 'valor' => $totalQuestionarios, 'name' => 'Questionários','color' => 'primary', 'go' => route('dashboard.questionarios.index')])
-        @include("partials.widget", ['icon' => 'comment-bubble', 'valor' => $totalPerguntas, 'name' => 'Perguntas','color' => 'info', 'go' => route('dashboard.perguntas.index')])
-        @include("partials.widget", ['icon' => 'truck', 'valor' => $totalFornecedores, 'name' => 'Fornecedores','color' => 'warning', 'go' => route('dashboard.usuarios.index', ['search' => 'fornecedor'])])
-        @include("partials.widget", ['icon' => 'settings', 'valor' => $totalPerguntasRespondidas, 'name' => 'Perguntas Respondidas','color' => 'success'])
+        @include("partials.widget", ['icon' => 'education', 'valor' => null, 'name' => 'Questionários','color' => 'primary', 'go' => "#"])
+        @include("partials.widget", ['icon' => 'comment-bubble', 'valor' => null, 'name' => 'Perguntas','color' => 'info', 'go' => "#"])
+        @include("partials.widget", ['icon' => 'truck', 'valor' => null, 'name' => 'Fornecedores','color' => 'warning', 'go' => "#"])
+        @include("partials.widget", ['icon' => 'settings', 'valor' => null, 'name' => 'Perguntas Respondidas','color' => 'success', 'go' => "#"])
     </div>
-    @endhasanyrole
 @endsection
 
 @section('container2')
@@ -88,6 +87,5 @@
     @endhasanyrole
 
 @endsection
-
 
 

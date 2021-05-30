@@ -1,14 +1,14 @@
-<div class="col-md-{{ $size ?? 3 }} col-lg-{{ $size ?? 3 }} col-12">
+<div class="col-md-{{ $size ?? 3 }} col-lg-{{ $size ?? 3 }} col-sm-12 col-12">
     <div class="card">
         <div class="card-body p-3 d-flex align-items-center">
             <div class="bg-{{ $color ?? "primary" }} p-3 mfe-3">
                 <svg class="c-icon c-icon-xl">
-                    <use xlink:href="{!! asset("") !!}vendors/@coreui/icons/svg/free.svg#cil-{{ $icon }}"></use>
+                    <use xlink:href="{!! asset("") !!}vendors/@coreui/icons/svg/free.svg#cil-{{ $icon  ?? ""}}"></use>
                 </svg>
             </div>
             <div>
-                <div class="fs-6 fw-semibold text-primary">{{ $valor }}</div>
-                <div class="text-muted text-uppercase font-weight-bold small">{{ $name }}</div>
+                <div class="fs-6 fw-semibold text-primary">{{ $valor ?? "0" }}</div>
+                <div class="text-muted text-uppercase font-weight-bold small">{{ $name ?? "" }}</div>
             </div>
         </div>
         @isset($go)

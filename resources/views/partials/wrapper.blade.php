@@ -24,7 +24,7 @@
                             <div class="col-md-12 col-12 col-lg-12">
                                 <div class="card card-accent-primary">
                                     <div class="card-header">
-                                        {{ $title ?? "Title não definido" }}
+                                        {{ (isset($title) && !empty(trim($title))) ? $title : "Resumo/Informações do Sistema" }}
                                     </div>
                                     <div class="card-body">
                                         @include("partials.alerts")
