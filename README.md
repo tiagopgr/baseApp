@@ -47,3 +47,6 @@ npm run dev
 npm run prod 
 ```
 
+## Observações
+- Ao usar banco sqlite em máquina windows colocar o caminho completo em
+  DB_DATABASE e trocar a \\ por \\\\ no path do diretório.
