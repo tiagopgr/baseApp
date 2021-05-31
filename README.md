@@ -13,15 +13,15 @@
 
 
 ### Instruções após o clone do repositório
-    
-* Instalar pacotes do composer.
-```shell
-composer install
-```
 
 * Criar o arquivo .env pelo .env.example
 ```shell
 cp .env.example .env
+```
+    
+* Instalar pacotes do composer.
+```shell
+composer install
 ```
 
 * Gerar a chave de criptografia exigida pelo laravel
