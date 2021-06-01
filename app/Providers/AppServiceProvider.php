@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Repositories\PermissionRepository;
 use App\Repositories\PermissionRepositoryEloquent;
+use App\Repositories\PessoaRepository;
+use App\Repositories\PessoaRepositoryEloquent;
 use App\Repositories\RoleRepository;
 use App\Repositories\RoleRepositoryEloquent;
 use Illuminate\Support\Facades\App;
@@ -35,5 +37,6 @@ class AppServiceProvider extends ServiceProvider
         \Schema::defaultStringLength(191);
         \App::bind(PermissionRepository::class, PermissionRepositoryEloquent::class);
         \App::bind(RoleRepository::class, RoleRepositoryEloquent::class);
+        \App::bind(PessoaRepository::class, PessoaRepositoryEloquent::class);
     }
 }

@@ -3,10 +3,10 @@
 @section("container")
 
     <div class="row">
-        @include("partials.widget", ['icon' => 'education', 'valor' => null, 'name' => 'Questionários','color' => 'primary', 'go' => "#"])
-        @include("partials.widget", ['icon' => 'comment-bubble', 'valor' => null, 'name' => 'Perguntas','color' => 'info', 'go' => "#"])
+        @include("partials.widget", ['icon' => 'education', 'valor' => null, 'name' => 'Clientes','color' => 'primary', 'go' => "#"])
+        @include("partials.widget", ['icon' => 'comment-bubble', 'valor' => null, 'name' => 'Produtos','color' => 'info', 'go' => "#"])
         @include("partials.widget", ['icon' => 'truck', 'valor' => null, 'name' => 'Fornecedores','color' => 'warning', 'go' => "#"])
-        @include("partials.widget", ['icon' => 'settings', 'valor' => null, 'name' => 'Perguntas Respondidas','color' => 'success', 'go' => "#"])
+        @include("partials.widget", ['icon' => 'settings', 'valor' => null, 'name' => 'Estoque Baixo','color' => 'danger', 'go' => "#"])
     </div>
 @endsection
 

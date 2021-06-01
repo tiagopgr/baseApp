@@ -7,11 +7,11 @@
         <h4 class="alert-heading">Aconteceu um erro!</h4>
         <p>Código com código 500</p>
         <hr>
-        @hasanyrole('adm|operador')
-        <p class="mb-0">Mensagem de erro: {{ $exception->getMessage() }}</p>
+        @if(env('APP_ENV') === "local" || env('APP_ENV') === "dev")
+            <p class="mb-0">Mensagem de erro: {{ $exception->getMessage() }}</p>
         @else
             <p class="mb-0">Tente novamente ou consulte o administrador do sistema</p>
-        @endhasanyrole
+        @endif
     </div>
 
 
