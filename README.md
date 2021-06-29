@@ -50,3 +50,8 @@ npm run prod
 ## Observações
 - Ao usar banco sqlite em máquina windows colocar o caminho completo em
   DB_DATABASE e trocar a \\ por \\\\ no path do diretório.
+
+
+### Pagote para novas futuras implementações...
+* https://tenancyforlaravel.com/docs/v3/introduction/
+* https://github.com/Kyslik/column-sortable
